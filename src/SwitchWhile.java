@@ -5,8 +5,16 @@ public class SwitchWhile {
 
         String rocketSound = "El cohete suena ziuuum!";
         String bikeSound = "La moto suena brrrmmm!";
+        String menu =
+        """
+        Elige que sonido quieres escuchar:
+        1-cohete, y suena ziuuum!
+        3-moto, y suena brrrmmmm!
+        """;
 
-        System.out.printf("Elige que sonido quieres escuchar:\n1-cohete, y suena ziuuum!\n3-moto, y suena brrrmmmm!\n");
+
+        System.out.printf(menu);
+
         String sound = sc.nextLine().trim();
 
         while (true) {
@@ -26,7 +34,7 @@ public class SwitchWhile {
             String answer = sc.nextLine().trim().toLowerCase();
 
             if (answer.equals("si")) {
-                System.out.printf("Genial! Que sonido quieres escuchar ahora? recuerda que:\n1-cohete, y suena ziuuum!\n3-moto, y suena brrrmmmm!\n");
+                System.out.printf("Genial!\n" + menu);
                 sound = sc.nextLine().trim();
             } else {
                 System.out.println("Hasta la proxima!");
