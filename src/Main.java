@@ -5,9 +5,9 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-       // Switch.execute(sc);
-        //While.execute(sc);
-        SwitchWhile.execute(sc);
+       Switch.execute(sc);
+       While.execute(sc);
+       SwitchWhile.execute(sc);
 
         sc.close();
     }
